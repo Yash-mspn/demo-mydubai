@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dubai Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar glass">
+        <h1 class="logo">BE MY <span style="color: #ffee10;">GUEST</span>
+            COME TO <span style="color: #ffee10;">DUBAI</span></h1>
+        <ul class="nav-links">
+            <li id="pri" class="active cir_border"><a href="#home">Home</a></li>
+            <li id="sec" class="cir_border"><a href="tours.html">Explore</a></li>
+            <!-- <li id="tri" class="cir_border"><a href="#booking">Book</a></li> -->
+            <li id="quad" class="cir_border"><a href="#about">About</a></li>
+            <li class="ctn contact_button"><a href="#contact">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--navbar-->
+
+    <header class="home" id="home">
+        <div class="header-content">
+            <h2>Explore the the beauty of Dubai</h2>
+            <div class="line"></div>
+            <h1>EXPERIENCE THE BEST TIME OF YOUR LIFE</h1>
+            <!-- <a href="gallery/gallery.html" class="ctn" target="_blank">View Gallery</a> -->
+            <a href="booking.html" class="ctn" target="_blank">Book An Appointment</a>
+
+        </div>
+    </header>
+
+    
+
+    <!-- About -->
+    <section id="about">
+        <div class="title">
+            <h1 class="font-color">About Us</h1>
+            <div class="line"></div>
+        </div>
+        <div id="about_us">
+            <div class="boxx">
+                <p><b> Welcome to Titans Travels, a distinguished division of Titans Inc., proudly based in the vibrant city of Dubai. Established in 2024, we are dedicated to offering premier travel experiences that reveal the true essence of this dynamic destination.
+                    
+                    At Titans Travels, our mission is to provide you with unparalleled journeys through Dubai's stunning landscapes, iconic landmarks, and rich cultural heritage. Whether you're eager to marvel at architectural wonders like the Burj Khalifa, explore traditional souks, or indulge in luxurious desert safaris, we have tailored tours designed to exceed your expectations.
+                    
+                    Our team of expert guides is passionate about showcasing the best of Dubai, offering insightful commentary and personalized service to ensure a seamless and enriching experience. We pride ourselves on crafting unique itineraries that cater to diverse interests, from family-friendly adventures to exclusive luxury escapes.
+                    
+                    At Titans Travels, we are committed to delivering exceptional customer service and creating memorable experiences. Join us and let us transform your visit to Dubai into a journey of discovery and wonder. Discover Dubai with Titans Travels and experience a level of exploration and comfort that is truly extraordinary.</b></p>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="title">
+            <h1 class="font-color">Contact Us</h1>
+            <div class="line"></div>
+        </div>
+        <div class="contact_us">
+            <form action="" method="post">
+                <div class="c">
+                    <div class="ccol">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="ccol">
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="ccol">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="ccol">
+                        <input type="text" id="email" name="email" placeholder="Your Email id">
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="ccol">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="ccol">
+                        <select name="country" id="country">
+                            <option value="India">Dubai</option>
+                            <option value="Russia">Russia</option>
+                            <option value="usa">USA</option>
+                            <option value="Japan">Japan</option>
+                            <option value="France">France</option>
+                            <option value="Brazil">India</option>
+                            <option value="Nigeria">Saudi Arabia</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="ccol">
+                        <label for="remarks">Remarks</label>
+                    </div>
+                    <div class="ccol">
+                        <textarea type="text" id="remarks" name="remarks" placeholder="Your Remarks....." style="height: 150px;"></textarea>
+                    </div>
+                </div>
+                <div class="c-s">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            <div class="cbox">
+                <div class="c_boxx">
+                    <h4>Our Email</h4>
+                    <a href="contact@titanstravels.com"><i class="fa fa-envelope"></i><p> contact@titanstravels.com</p></a>
+                    
+                </div>
+                <div class="c_boxx">
+                    <h4>Our Contact no</h4>
+                    <a href="tel:"><i class="fa fa-phone"></i><p> +2378655563749</p></a>
+                    
+                </div>
+                <div class="c_boxx">
+                    <h4>Our Location</h4>
+                    <a href="#"><i class="fa fa-map-marker"></i><p>Emmar towers, Downtown, Dubai, UAE</p></a>
+                    
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- contact  -->
+    
+    <div className="footer-bottom">
+        <center> <p>© All Rights Reserved by, Titans Travels<br>
+            A part of Titans Inc.<br>
+            Made with <i class=" ri-heart-3-fill"></i> by{"Titans Inc."}</p>
+           <!-- <p className="footer-made"> -->
+             <!-- Made with <i class=" ri-heart-3-fill"></i> by{"Titans Inc. "} -->
+             <a href="https://www.titans-inc.com/"></a></center>
+          
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
